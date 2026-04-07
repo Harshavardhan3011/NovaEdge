@@ -25,8 +25,8 @@ export default function ProgramsPage() {
             </p>
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <ButtonLink href="/contact">Enroll / Learn More</ButtonLink>
-              <ButtonLink href="#technical" variant="secondary">
-                Jump to technical programs
+              <ButtonLink href="/programs/technical" variant="secondary">
+                Explore technical track
               </ButtonLink>
             </div>
           </div>

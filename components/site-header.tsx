@@ -14,9 +14,9 @@ export function SiteHeader() {
   const [programsOpen, setProgramsOpen] = useState(false);
 
   const programItems = [
-    { label: "Technical", href: "/programs#technical" },
-    { label: "Soft Skills", href: "/programs#soft-skills" },
-    { label: "Aptitude", href: "/programs#aptitude" },
+    { label: "Technical", href: "/programs/technical" },
+    { label: "Soft Skills", href: "/programs/soft-skills" },
+    { label: "Aptitude", href: "/programs/aptitude" },
   ];
 
   const closeMenus = () => {
@@ -54,7 +54,7 @@ export function SiteHeader() {
           </div>
         </Container>
 
-        <nav className="absolute left-1/2 top-full z-50 mt-4 w-[calc(100%-1.5rem)] max-w-6xl -translate-x-1/2 rounded-2xl border border-gray-200 bg-white/80 shadow-md backdrop-blur-md">
+        <nav className="absolute left-1/2 top-full z-50 mt-1 w-[95%] max-w-7xl -translate-x-1/2 rounded-2xl border border-gray-200 bg-white/80 shadow-md backdrop-blur-md">
           <div className="flex items-center justify-between px-6 py-3">
             <div className="w-56">
               <Link href="/" className="inline-flex items-center gap-3">
@@ -143,6 +143,17 @@ export function SiteHeader() {
                   )}
                 >
                   About
+                </Link>
+
+                <Link
+                  href="/gallery"
+                  onClick={closeMenus}
+                  className={cn(
+                    "text-sm font-medium text-gray-600 transition-all duration-200 hover:text-blue-500",
+                    pathname === "/gallery" ? "text-blue-600" : "",
+                  )}
+                >
+                  Gallery
                 </Link>
               </div>
             </div>
@@ -233,6 +244,17 @@ export function SiteHeader() {
                   )}
                 >
                   Institutional
+                </Link>
+
+                <Link
+                  href="/gallery"
+                  onClick={closeMenus}
+                  className={cn(
+                    "block rounded-xl px-3 py-3 text-sm font-medium transition-colors hover:bg-slate-100",
+                    pathname === "/gallery" ? "text-blue-700" : "text-slate-700",
+                  )}
+                >
+                  Gallery
                 </Link>
 
                 <ButtonLink href="/contact" className="mt-2 w-full rounded-full">

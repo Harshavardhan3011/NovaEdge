@@ -42,6 +42,15 @@ export function ContactSection() {
                   </label>
                 </div>
                 <label className="grid gap-2 text-sm font-medium text-slate-700">
+                  Phone Number
+                  <input
+                    type="tel"
+                    name="phone"
+                    className="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-blue-400 focus:ring-2 focus:ring-blue-100"
+                    placeholder="+91 98765 43210"
+                  />
+                </label>
+                <label className="grid gap-2 text-sm font-medium text-slate-700">
                   Message
                   <textarea
                     name="message"
